@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Search, MapPin, Calendar as CalendarIcon, Users, DollarSign } from "lucide-react";
+import { Search, MapPin, Calendar as CalendarIcon, Users, IndianRupee } from "lucide-react";
 import { format } from "date-fns";
 import heroImage from "@/assets/hero-beach.jpg";
 
@@ -85,12 +85,13 @@ const HeroSection = () => {
 
             {/* Budget */}
             <div className="relative">
-              <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
+              <IndianRupee className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
               <Input
-                placeholder="Budget"
+                placeholder="Budget (₹)"
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
                 className="pl-10 h-12"
+                type="number"
               />
             </div>
           </div>
