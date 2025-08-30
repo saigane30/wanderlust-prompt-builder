@@ -2,46 +2,85 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, MapPin, Clock, Users } from "lucide-react";
-import mountainsImage from "@/assets/destination-mountains.jpg";
-import templeImage from "@/assets/destination-temple.jpg";
-import cityImage from "@/assets/destination-city.jpg";
+import tajMahalImage from "@/assets/destination-taj-mahal.jpg";
+import keralaImage from "@/assets/destination-kerala.jpg";
+import rajasthanImage from "@/assets/destination-rajasthan.jpg";
+import goaImage from "@/assets/destination-goa.jpg";
+import himalayasImage from "@/assets/destination-himalayas.jpg";
+import varanasiImage from "@/assets/destination-varanasi.jpg";
 
 const destinations = [
   {
     id: 1,
-    title: "Swiss Alps Adventure",
-    location: "Switzerland",
-    image: mountainsImage,
-    price: 207500,
-    duration: "7 days",
+    title: "Golden Triangle Tour",
+    location: "Delhi, Agra & Jaipur",
+    image: tajMahalImage,
+    price: 25000,
+    duration: "6 days",
     rating: 4.9,
-    reviews: 156,
-    category: "Adventure",
-    description: "Experience breathtaking mountain views and thrilling activities in the heart of the Swiss Alps.",
+    reviews: 324,
+    category: "Cultural",
+    description: "Experience India's most iconic monuments including the magnificent Taj Mahal and explore royal palaces.",
   },
   {
     id: 2,
-    title: "Ancient Temples Explorer",
-    location: "Cambodia",
-    image: templeImage,
-    price: 107900,
-    duration: "5 days",
+    title: "Kerala Backwaters",
+    location: "Alleppey, Kerala",
+    image: keralaImage,
+    price: 18500,
+    duration: "4 days",
     rating: 4.8,
-    reviews: 203,
-    category: "Cultural",
-    description: "Discover mystical ancient temples and immerse yourself in rich cultural heritage.",
+    reviews: 256,
+    category: "Nature",
+    description: "Cruise through serene backwaters on traditional houseboats and enjoy Kerala's natural beauty.",
   },
   {
     id: 3,
-    title: "European City Break",
-    location: "Prague",
-    image: cityImage,
-    price: 74700,
-    duration: "4 days",
+    title: "Rajasthan Desert Safari",
+    location: "Jaisalmer, Rajasthan",
+    image: rajasthanImage,
+    price: 22000,
+    duration: "5 days",
     rating: 4.7,
-    reviews: 89,
-    category: "City",
-    description: "Explore charming cobblestone streets and stunning medieval architecture.",
+    reviews: 189,
+    category: "Adventure",
+    description: "Experience the magic of Thar Desert with camel safaris and stay in luxury desert camps.",
+  },
+  {
+    id: 4,
+    title: "Goa Beach Paradise",
+    location: "North & South Goa",
+    image: goaImage,
+    price: 15000,
+    duration: "5 days",
+    rating: 4.6,
+    reviews: 412,
+    category: "Beach",
+    description: "Relax on pristine beaches, enjoy water sports, and experience Goa's vibrant nightlife.",
+  },
+  {
+    id: 5,
+    title: "Himalayan Adventure",
+    location: "Manali, Himachal Pradesh",
+    image: himalayasImage,
+    price: 28000,
+    duration: "7 days",
+    rating: 4.9,
+    reviews: 167,
+    category: "Adventure",
+    description: "Trek through spectacular mountain landscapes and experience the majesty of the Himalayas.",
+  },
+  {
+    id: 6,
+    title: "Spiritual Varanasi",
+    location: "Varanasi, Uttar Pradesh",
+    image: varanasiImage,
+    price: 12000,
+    duration: "3 days",
+    rating: 4.8,
+    reviews: 298,
+    category: "Spiritual",
+    description: "Witness ancient rituals on sacred ghats and experience India's spiritual heart.",
   },
 ];
 
