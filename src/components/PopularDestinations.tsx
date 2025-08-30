@@ -12,7 +12,7 @@ const destinations = [
     title: "Swiss Alps Adventure",
     location: "Switzerland",
     image: mountainsImage,
-    price: 2499,
+    price: 207500,
     duration: "7 days",
     rating: 4.9,
     reviews: 156,
@@ -24,7 +24,7 @@ const destinations = [
     title: "Ancient Temples Explorer",
     location: "Cambodia",
     image: templeImage,
-    price: 1299,
+    price: 107900,
     duration: "5 days",
     rating: 4.8,
     reviews: 203,
@@ -36,7 +36,7 @@ const destinations = [
     title: "European City Break",
     location: "Prague",
     image: cityImage,
-    price: 899,
+    price: 74700,
     duration: "4 days",
     rating: 4.7,
     reviews: 89,
@@ -110,7 +110,7 @@ const PopularDestinations = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-2xl font-bold text-primary">
-                      ${destination.price}
+                      ₹{destination.price.toLocaleString('en-IN')}
                     </span>
                     <span className="text-muted-foreground ml-1">per person</span>
                   </div>
